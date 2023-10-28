@@ -4,7 +4,10 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "seed": "node -r dotenv/config ./scripts/seed.js"
+    "seed": "node -r dotenv/config ./scripts/seed.js",
+    "prepare": "husky install",
+    "lint": "eslint --ext .ts,.tsx app",
+    "linter": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -14,6 +17,7 @@
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
+    "husky": "^8.0.3",
     "next": "^14.0.0",
     "postcss": "8.4.31",
     "react": "18.2.0",
@@ -26,7 +30,12 @@
     "@types/bcrypt": "^5.0.1",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
     "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0",
     "prettier": "^3.0.3"
   },
   "engines": {
